@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Stay updated with Ghana and global trending news around the 70th Independence celebration.">
+    <title>Trending News | Ghana @ 70</title>
+    <link rel="stylesheet" href="src/style.css">
+</head>
+<body class="trending-page">
+    <header class="topbar">
+        <div class="container nav-wrap">
+            <a href="index.html" class="brand" aria-label="Ghana 70 Independence home page">
+                <img src="images/Ghana-Inspired 70 Chale Crown Logo.png" alt="Ghana 70 independence crest logo">
+            </a>
+
+            <nav class="main-nav" aria-label="Main navigation">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="trending.html">Trending</a>
+                <a href="entertainment.html">Entertainment</a>
+                <a href="history.html">History</a>
+                <a href="culture.html">Culture</a>
+                <a href="exploreghana.html">Explore Ghana</a>
+                <a href="shop.html">Shop</a>
+            </nav>
+
+            <a href="history.html" class="nav-cta">Celebrate</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="trending-hero">
+            <div class="container trending-hero-inner">
+                <div class="trending-copy">
+                    <p class="eyebrow">Trending</p>
+                    <h1>News, stories, and global highlights.</h1>
+                    <p>
+                        Discover what is shaping conversations in Ghana and beyond as the nation prepares to mark seventy years of independence, progress, and national pride.
+                    </p>
+                </div>
+
+                <aside class="trending-promo">
+                    <span class="promo-tag">Now Trending</span>
+                    <strong>Ghana @ 70: Unity in Action</strong>
+                    <p>From cultural revival to youth innovation, Ghana continues to inspire conversations about identity, opportunity, and national growth.</p>
+                </aside>
+            </div>
+        </section>
+
+        <section class="trending-section">
+            <div class="container">
+                <div class="section-head">
+                    <h2>Trending News</h2>
+                    <a href="index.html" class="view-link">Back to Home</a>
+                </div>
+
+                <div class="live-status-bar" aria-live="polite">
+                    <span class="status-dot"></span>
+                    <span>Live updates</span>
+                    <span class="status-divider">•</span>
+                    <span id="last-updated">Refreshing every 5 minutes</span>
+                    <button type="button" id="refresh-now" class="refresh-button">Refresh now</button>
+                </div>
+
+                <div class="trend-filters" aria-label="Trend categories">
+                    <button type="button" class="filter-pill active" data-filter="now" aria-pressed="true">Now</button>
+                    <button type="button" class="filter-pill" data-filter="next" aria-pressed="false">Next</button>
+                    <button type="button" class="filter-pill" data-filter="culture" aria-pressed="false">Culture</button>
+                    <button type="button" class="filter-pill" data-filter="youth" aria-pressed="false">Youth</button>
+                    <button type="button" class="filter-pill" data-filter="global" aria-pressed="false">Global</button>
+                </div>
+
+                <article class="featured-story">
+                    <div class="featured-copy">
+                        <span class="news-kicker">Featured Story</span>
+                        <h3>Ghana’s 70th independence celebration is becoming a global story of heritage, innovation, and national renewal.</h3>
+                        <p>From cultural festivals to digital campaigns and youth-led conversations, the anniversary is energizing communities at home and abroad.</p>
+                    </div>
+                    <div class="featured-tags">
+                        <span>Heritage</span>
+                        <span>Culture</span>
+                        <span>Progress</span>
+                        <span>Unity</span>
+                    </div>
+                </article>
+
+                <div class="news-grid trend-board">
+                    <a href="https://www.instagram.com/explore/tags/ghanaat70/" target="_blank" rel="noreferrer" class="news-card social-link trend-card" data-category="now">
+                        <div class="news-thumb">IG</div>
+                        <div class="news-body">
+                            <span class="news-kicker">Instagram</span>
+                            <h3>#GhanaAt70 is trending as Ghanaians celebrate heritage, pride, and national identity online.</h3>
+                            <p>Follow the conversations, stories, and visual moments driving national pride across Ghana and the diaspora.</p>
+                            <div class="news-meta">
+                                <span>Now</span>
+                                <span>Social</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="https://x.com/search?q=Ghana%20At%2070&src=typed_query" target="_blank" rel="noreferrer" class="news-card social-link trend-card" data-category="now">
+                        <div class="news-thumb">X</div>
+                        <div class="news-body">
+                            <span class="news-kicker">X / Twitter</span>
+                            <h3>Ghana’s 70th anniversary is sparking debates, celebrations, and patriotic discussions worldwide.</h3>
+                            <p>Track real-time conversations from citizens, creators, and public figures using the official trend discussions.</p>
+                            <div class="news-meta">
+                                <span>Live</span>
+                                <span>Buzz</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="https://www.tiktok.com/tag/GhanaAt70" target="_blank" rel="noreferrer" class="news-card social-link trend-card" data-category="next">
+                        <div class="news-thumb">TT</div>
+                        <div class="news-body">
+                            <span class="news-kicker">TikTok</span>
+                            <h3>Short-form videos are driving youth engagement around Ghanaian culture, history, and national pride.</h3>
+                            <p>Explore creative trend content, dance challenges, storytelling, and cultural highlights connected to Ghana @ 70.</p>
+                            <div class="news-meta">
+                                <span>Trending</span>
+                                <span>Video</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="https://www.instagram.com/explore/tags/ghanaculture/" target="_blank" rel="noreferrer" class="news-card social-link trend-card" data-category="culture">
+                        <div class="news-thumb">CULT</div>
+                        <div class="news-body">
+                            <span class="news-kicker">Culture</span>
+                            <h3>Ghanaian fashion, food, music, and traditions are dominating cultural conversations this season.</h3>
+                            <p>From local styles to culinary heritage, Ghana’s creative identity remains one of the most visible digital trends.</p>
+                            <div class="news-meta">
+                                <span>Now</span>
+                                <span>Heritage</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="https://www.instagram.com/explore/tags/youngghana/" target="_blank" rel="noreferrer" class="news-card social-link trend-card" data-category="youth">
+                        <div class="news-thumb">YTH</div>
+                        <div class="news-body">
+                            <span class="news-kicker">Youth</span>
+                            <h3>Young Ghanaians are driving storytelling, innovation, and national pride through digital media.</h3>
+                            <p>Creators, students, and entrepreneurs are shaping a new narrative for Ghana’s next generation.</p>
+                            <div class="news-meta">
+                                <span>Live</span>
+                                <span>Creators</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="https://www.youtube.com/results?search_query=ghana+future+innovation" target="_blank" rel="noreferrer" class="news-card social-link trend-card" data-category="global">
+                        <div class="news-thumb">GLO</div>
+                        <div class="news-body">
+                            <span class="news-kicker">Global</span>
+                            <h3>International audiences are following Ghana’s progress, governance, and cultural influence across Africa.</h3>
+                            <p>Global conversations are linking Ghana’s story to innovation, diplomacy, and Pan-African pride.</p>
+                            <div class="news-meta">
+                                <span>Future</span>
+                                <span>World</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="https://www.instagram.com/explore/tags/ghanadiaspora/" target="_blank" rel="noreferrer" class="news-card social-link trend-card" data-category="next">
+                        <div class="news-thumb">DIA</div>
+                        <div class="news-body">
+                            <span class="news-kicker">Next</span>
+                            <h3>Ghana’s diaspora networks are preparing for stronger cultural and investment connections in the years ahead.</h3>
+                            <p>Interest in Ghanaian diaspora partnerships, tourism, and national collaboration is set to rise further.</p>
+                            <div class="news-meta">
+                                <span>2027+</span>
+                                <span>Connections</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="https://www.instagram.com/explore/tags/futureghana/" target="_blank" rel="noreferrer" class="news-card social-link trend-card" data-category="next">
+                        <div class="news-thumb">FUT</div>
+                        <div class="news-body">
+                            <span class="news-kicker">Next</span>
+                            <h3>Future-focused conversations are exploring smart cities, youth leadership, and innovation in Ghana.</h3>
+                            <p>Online communities are increasingly discussing national progress through education, technology, and sustainability.</p>
+                            <div class="news-meta">
+                                <span>Upcoming</span>
+                                <span>Growth</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="https://www.instagram.com/explore/tags/africanpride/" target="_blank" rel="noreferrer" class="news-card social-link trend-card" data-category="global">
+                        <div class="news-thumb">AFR</div>
+                        <div class="news-body">
+                            <span class="news-kicker">Global</span>
+                            <h3>Pan-African pride is rising as Ghana continues to symbolize resilience, leadership, and opportunity.</h3>
+                            <p>Across the continent and beyond, Ghana remains a reference point for unity, progress, and cultural power.</p>
+                            <div class="news-meta">
+                                <span>Global</span>
+                                <span>Africa</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="trending-section">
+            <div class="container trend-list">
+                <div>
+                    <div class="section-head">
+                        <h2>Global Trends</h2>
+                    </div>
+
+                    <ul class="feature-list">
+                        <li>
+                            <a href="https://www.instagram.com/explore/tags/africanheritage/" target="_blank" rel="noreferrer" class="trend-link">
+                                <span class="feature-rank">01</span>
+                                <div>
+                                    <h3>Black History & Heritage Revival</h3>
+                                    <p>Online conversations are amplifying African heritage, identity, and historical pride across the diaspora.</p>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://www.youtube.com/results?search_query=Ghana+culture+and+heritage" target="_blank" rel="noreferrer" class="trend-link">
+                                <span class="feature-rank">02</span>
+                                <div>
+                                    <h3>Cultural Heritage Revival</h3>
+                                    <p>People are returning to traditions, food, music, and storytelling as a way to reconnect with roots.</p>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://www.tiktok.com/tag/youthvoice" target="_blank" rel="noreferrer" class="trend-link">
+                                <span class="feature-rank">03</span>
+                                <div>
+                                    <h3>Youth Voice & Digital Storytelling</h3>
+                                    <p>Young creators are using social platforms to shape conversations around sustainability, progress, and identity.</p>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://www.instagram.com/explore/tags/nationalpride/" target="_blank" rel="noreferrer" class="trend-link">
+                                <span class="feature-rank">04</span>
+                                <div>
+                                    <h3>Future-Focused National Pride</h3>
+                                    <p>Communities are tying celebration with innovation, entrepreneurship, and a hopeful vision for the next generation.</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <aside class="social-panel">
+                    <h3>Social Hub</h3>
+                    <div class="social-list">
+                        <a href="https://www.instagram.com/explore/tags/ghanaat70/" target="_blank" rel="noreferrer">#GhanaAt70</a>
+                        <a href="https://www.instagram.com/explore/tags/blackhistory/" target="_blank" rel="noreferrer">#BlackHistory</a>
+                        <a href="https://x.com/search?q=%23FutureGhana&src=typed_query" target="_blank" rel="noreferrer">#FutureGhana</a>
+                        <a href="https://www.tiktok.com/tag/africanpride" target="_blank" rel="noreferrer">#AfricanPride</a>
+                        <a href="https://www.instagram.com/explore/tags/nationalpride/" target="_blank" rel="noreferrer">#NationalPride</a>
+                    </div>
+                </aside>
+
+                <aside class="glance-box">
+                    <h3>At a Glance</h3>
+                    <ul class="metric-list">
+                        <li><span>Now</span><strong>#GhanaAt70</strong></li>
+                        <li><span>Next</span><strong>#FutureGhana</strong></li>
+                        <li><span>Digital</span><strong>Instagram, X, TikTok</strong></li>
+                        <li><span>Focus</span><strong>Heritage + Future</strong></li>
+                    </ul>
+                </aside>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-wrap">
+            <p>© 2026 Ghana @ 70</p>
+            <p>Celebrating freedom, culture, and national pride.</p>
+        </div>
+    </footer>
+
+    <script src="src/script.js"></script>
+</body>
+</html>

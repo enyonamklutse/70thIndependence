@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Celebrate Ghana's rich culture, traditions, language, food and creative spirit on the 70th Independence Anniversary.">
+    <title>Culture | Ghana @ 70</title>
+    <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+    <header class="topbar">
+        <div class="container nav-wrap">
+            <a href="index.html" class="brand" aria-label="Ghana 70 Independence home page">
+                <img src="images/Ghana-Inspired 70 Chale Crown Logo.png" alt="Ghana 70 independence crest logo">
+            </a>
+
+            <nav class="main-nav" aria-label="Main navigation">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="trending.html">Trending</a>
+                <a href="entertainment.html">Entertainment</a>
+                <a href="history.html">History</a>
+                <a href="culture.html">Culture</a>
+                <a href="exploreghana.html">Explore Ghana</a>
+                <a href="shop.html">Shop</a>
+            </nav>
+
+            <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <a href="history.html" class="nav-cta">Celebrate</a>
+        </div>
+    </header>
+
+    <main class="culture-page">
+        <section class="culture-hero">
+            <div class="container culture-hero-inner">
+                <div class="culture-copy">
+                    <p class="eyebrow">Ghana @ 70</p>
+                    <h1>EXPERIENCE THE CULTURE OF GHANA</h1>
+                    <p class="lead">
+                        From colourful festivals and beautiful kente cloth to delicious traditional dishes, powerful rhythms, and ancient traditions, discover the culture that makes Ghana unique.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="#culture-categories" class="primary-btn">Explore Our Heritage</a>
+                        <a href="exploreghana.html" class="secondary-btn light-btn-alt">Discover Our Regions</a>
+                    </div>
+
+                    <div class="mini-stats" aria-label="Ghana culture highlights">
+                        <div>
+                            <strong>16</strong>
+                            <span>Regions</span>
+                        </div>
+                        <div>
+                            <strong>80+</strong>
+                            <span>Languages</span>
+                        </div>
+                        <div>
+                            <strong>70</strong>
+                            <span>Years of pride</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="culture-visual">
+                    <img src="images/large_000000.jpg" alt="A vibrant Ghanaian cultural scene">
+                    <div class="floating-card culture-card">
+                        <span class="card-label">Culture of the Week</span>
+                        <strong>Akwasidae</strong>
+                        <small>Celebrating lineage, memory and community</small>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="culture-section" id="culture-week">
+            <div class="container week-layout">
+                <div class="week-image">
+                    <img src="images/Ghanaians.jpeg" alt="Ghanaians celebrating together in a joyful cultural moment">
+                </div>
+
+                <div class="week-copy">
+                    <p class="eyebrow alt">Culture of the Week</p>
+                    <h2>Festival traditions and everyday pride</h2>
+                    <p>
+                        Ghanaian culture is not only about special celebrations. It is present in family meals, spirited greetings, clothing, music, storytelling, and the deep respect people give to elders and community.
+                    </p>
+                    <p>
+                        This week, we celebrate the richness of Ghanaian festivals, the beauty of local languages, and the role of cultural heritage in shaping national identity.
+                    </p>
+
+                    <ul class="week-highlights">
+                        <li>Traditional festivals and community ceremonies</li>
+                        <li>Food, fashion, music and dance across the regions</li>
+                        <li>Language, proverbs, symbols and artistic pride</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="culture-section alt-panel" id="culture-categories">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow alt">Living Culture</p>
+                    <h2>What makes Ghana so memorable?</h2>
+                </div>
+
+                <div class="culture-toolbar">
+                    <div class="filter-pills" aria-label="Culture filters">
+                        <button class="filter-btn active" type="button" data-filter="all" aria-pressed="true">All</button>
+                        <button class="filter-btn" type="button" data-filter="fashion" aria-pressed="false">Fashion</button>
+                        <button class="filter-btn" type="button" data-filter="festivals" aria-pressed="false">Festivals</button>
+                        <button class="filter-btn" type="button" data-filter="food" aria-pressed="false">Food</button>
+                        <button class="filter-btn" type="button" data-filter="music" aria-pressed="false">Music</button>
+                        <button class="filter-btn" type="button" data-filter="arts" aria-pressed="false">Arts</button>
+                        <button class="filter-btn" type="button" data-filter="languages" aria-pressed="false">Languages</button>
+                        <button class="filter-btn" type="button" data-filter="modern" aria-pressed="false">Modern Culture</button>
+                    </div>
+
+                    <label class="culture-search" aria-label="Search culture categories">
+                        <span>Search</span>
+                        <input id="culture-search" type="search" placeholder="Search relevant terms...">
+                    </label>
+                </div>
+
+                <div class="culture-grid">
+                    <article class="culture-card" data-category-card="fashion">
+                        <span class="culture-icon">👗</span>
+                        <h3>Traditional Clothing and Fashion</h3>
+                        <p>Kente, adinkra, smock, beads and contemporary Ghanaian fashion all express identity, symbolism and creative pride.</p>
+                    </article>
+
+                    <article class="culture-card" data-category-card="festivals">
+                        <span class="culture-icon">🎉</span>
+                        <h3>Festivals and Celebrations</h3>
+                        <p>Homowo, Aboakyer, Hogbetsotso, Fetu Afahye, Akwasidae and others keep community memory alive through music, food and ritual.</p>
+                    </article>
+
+                    <article class="culture-card" data-category-card="food">
+                        <span class="culture-icon">🍲</span>
+                        <h3>Traditional Foods</h3>
+                        <p>Fufu, banku, waakye, jollof rice, kenkey, red-red and ampesi show how Ghanaian meals shape hospitality and identity.</p>
+                    </article>
+
+                    <article class="culture-card" data-category-card="music">
+                        <span class="culture-icon">🎶</span>
+                        <h3>Music and Dance</h3>
+                        <p>Highlife, hiplife, Afrobeats, drumming, adowa, agbadza and kpanlogo connect ceremony, celebration and everyday life.</p>
+                    </article>
+
+                    <article class="culture-card" data-category-card="arts">
+                        <span class="culture-icon">🖌️</span>
+                        <h3>Traditional Arts and Crafts</h3>
+                        <p>Kente weaving, adinkra printing, pottery, beadwork, leatherwork and wood carving preserve generations of skill and knowledge.</p>
+                    </article>
+
+                    <article class="culture-card" data-category-card="languages">
+                        <span class="culture-icon">🗣️</span>
+                        <h3>Languages, Symbols, and Oral Traditions</h3>
+                        <p>Akan, Ga, Ewe, Dagbani, Dagaare, Nzema and many more languages shape stories, greetings, proverbs and heritage.</p>
+                    </article>
+
+                    <article class="culture-card" data-category-card="modern">
+                        <span class="culture-icon">📱</span>
+                        <h3>Modern Ghanaian Culture</h3>
+                        <p>Creative entrepreneurship, digital art, youth culture, film and contemporary fashion show how traditions continue to evolve.</p>
+                    </article>
+
+                    <article class="culture-card" data-category-card="festivals">
+                        <span class="culture-icon">🤝</span>
+                        <h3>Community and Hospitality</h3>
+                        <p>Respect for elders, market life and festivals keep community values and social bonds at the centre of Ghanaian identity.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="culture-section fact-section">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow alt">Did You Know?</p>
+                    <h2>Interesting facts about Ghanaian heritage</h2>
+                </div>
+
+                <div class="fact-grid">
+                    <article class="fact-card">
+                        <span>01</span>
+                        <h3>Black Star identity</h3>
+                        <p>The Black Star symbol represents Ghana’s aspirations for freedom, unity, and African pride.</p>
+                    </article>
+
+                    <article class="fact-card">
+                        <span>02</span>
+                        <h3>Rich language diversity</h3>
+                        <p>Ghana is home to many ethnic groups and languages, each carrying unique stories, songs and values.</p>
+                    </article>
+
+                    <article class="fact-card">
+                        <span>03</span>
+                        <h3>Fashion heritage</h3>
+                        <p>Kente is famous around the world and remains a powerful symbol of prestige, craftsmanship and cultural continuity.</p>
+                    </article>
+
+                    <article class="fact-card">
+                        <span>04</span>
+                        <h3>Creative energy</h3>
+                        <p>From film and music to design and digital storytelling, Ghanaian creativity continues to influence Africa and beyond.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="culture-section alt-panel">
+            <div class="container">
+                <div class="section-heading left">
+                    <p class="eyebrow alt">Ghanaian Food Atlas</p>
+                    <h2>Food stories from the Ghanaian table</h2>
+                </div>
+
+                <div class="food-feature-grid">
+                    <article class="food-card">
+                        <img src="https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&fit=crop&w=900&q=80" alt="Jollof rice served as a Ghanaian dish">
+                        <div class="food-card-body">
+                            <span class="food-tag">Rice</span>
+                            <h3>Jollof Rice</h3>
+                            <p><strong>Ingredients:</strong> rice, tomato paste, onion, bell pepper, garlic, ginger, spices, stock, oil.</p>
+                            <p><strong>Preparation:</strong> The ingredients are simmered together until the rice absorbs the rich tomato and spice base, creating a fragrant, one-pot meal.</p>
+                            <p><strong>Commonly enjoyed in:</strong> Greater Accra, Ashanti, Western, Central, Eastern.</p>
+                        </div>
+                    </article>
+
+                    <article class="food-card">
+                        <img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=900&q=80" alt="Waakye prepared with beans and rice">
+                        <div class="food-card-body">
+                            <span class="food-tag">Breakfast</span>
+                            <h3>Waakye</h3>
+                            <p><strong>Ingredients:</strong> rice, beans, millet leaves, pepper, onion, gari, fish, boiled egg, shito.</p>
+                            <p><strong>Preparation:</strong> Rice and beans are cooked together with millet leaves until the grains soften, then served with spicy stew, fish and a side of gari.</p>
+                            <p><strong>Commonly enjoyed in:</strong> Greater Accra, Northern, Upper East, Upper West, Ashanti.</p>
+                        </div>
+                    </article>
+
+                    <article class="food-card">
+                        <img src="https://images.unsplash.com/photo-1547592166-23ac45744acd?auto=format&fit=crop&w=900&q=80" alt="Fufu and light soup served in a Ghanaian meal">
+                        <div class="food-card-body">
+                            <span class="food-tag">Staple</span>
+                            <h3>Fufu & Light Soup</h3>
+                            <p><strong>Ingredients:</strong> cassava, plantain or yam, chicken or fish, ginger, onion, pepper, palm oil, spices.</p>
+                            <p><strong>Preparation:</strong> The starchy ingredients are pounded until smooth, then served with a light, aromatic soup that balances heat and seasoning.</p>
+                            <p><strong>Commonly enjoyed in:</strong> Ashanti, Eastern, Volta, Bono, Bono East, Central.</p>
+                        </div>
+                    </article>
+
+                    <article class="food-card">
+                        <img src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?auto=format&fit=crop&w=900&q=80" alt="Banku and grilled tilapia on a Ghanaian table">
+                        <div class="food-card-body">
+                            <span class="food-tag">Coastal</span>
+                            <h3>Banku & Tilapia</h3>
+                            <p><strong>Ingredients:</strong> fermented corn dough, tilapia, pepper, onion, tomato, okra, spices, palm oil.</p>
+                            <p><strong>Preparation:</strong> Banku is prepared by fermenting and cooking corn dough into a soft, slightly sour staple, then paired with grilled or fried fish and spicy sauce.</p>
+                            <p><strong>Commonly enjoyed in:</strong> Greater Accra, Central, Western, Volta, Eastern.</p>
+                        </div>
+                    </article>
+
+                    <article class="food-card">
+                        <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=900&q=80" alt="Groundnut soup prepared with vegetables and meat">
+                        <div class="food-card-body">
+                            <span class="food-tag">Soup</span>
+                            <h3>Groundnut Soup</h3>
+                            <p><strong>Ingredients:</strong> groundnuts, chicken or goat meat, spinach or kontomire, onions, ginger, pepper, stock, spices.</p>
+                            <p><strong>Preparation:</strong> Groundnuts are blended into a thick, creamy base, then simmered with meat, greens and seasoning until rich and hearty.</p>
+                            <p><strong>Commonly enjoyed in:</strong> Northern, Upper East, Upper West, Ashanti, Greater Accra.</p>
+                        </div>
+                    </article>
+
+                    <article class="food-card">
+                        <img src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?auto=format&fit=crop&w=900&q=80" alt="Kelewele made from fried plantains with spices">
+                        <div class="food-card-body">
+                            <span class="food-tag">Snack</span>
+                            <h3>Kelewele</h3>
+                            <p><strong>Ingredients:</strong> ripe plantain, ginger, onion, chilli, cinnamon, salt, palm oil.</p>
+                            <p><strong>Preparation:</strong> Sliced plantain is tossed with aromatic spices and fried until crisp and caramelised on the outside.</p>
+                            <p><strong>Commonly enjoyed in:</strong> Greater Accra, Ashanti, Eastern, Volta, Western.</p>
+                        </div>
+                    </article>
+                </div>
+                <p class="food-note">These food-region links are representative; most Ghanaian dishes are enjoyed across multiple regions, often with local variations in ingredients and preparation.</p>
+            </div>
+        </section>
+
+        <section class="culture-section festival-section">
+            <div class="container">
+                <div class="section-heading left">
+                    <p class="eyebrow alt">Festival Calendar</p>
+                    <h2>Ghanaian festivals by region and month</h2>
+                </div>
+
+                <div class="festival-controls">
+                    <div class="festival-filter-group" id="festival-months">
+                        <button class="festival-month active" type="button" data-month="all">All months</button>
+                        <button class="festival-month" type="button" data-month="January">January</button>
+                        <button class="festival-month" type="button" data-month="March">March</button>
+                        <button class="festival-month" type="button" data-month="April">April</button>
+                        <button class="festival-month" type="button" data-month="May">May</button>
+                        <button class="festival-month" type="button" data-month="June">June</button>
+                        <button class="festival-month" type="button" data-month="July">July</button>
+                        <button class="festival-month" type="button" data-month="August">August</button>
+                        <button class="festival-month" type="button" data-month="September">September</button>
+                        <button class="festival-month" type="button" data-month="December">December</button>
+                    </div>
+
+                    <div class="festival-filter-group" id="festival-regions">
+                        <button class="festival-region active" type="button" data-region="all">All regions</button>
+                        <button class="festival-region" type="button" data-region="Greater Accra">Greater Accra</button>
+                        <button class="festival-region" type="button" data-region="Ashanti">Ashanti</button>
+                        <button class="festival-region" type="button" data-region="Central">Central</button>
+                        <button class="festival-region" type="button" data-region="Eastern">Eastern</button>
+                        <button class="festival-region" type="button" data-region="Volta">Volta</button>
+                        <button class="festival-region" type="button" data-region="Northern">Northern</button>
+                        <button class="festival-region" type="button" data-region="Western">Western</button>
+                    </div>
+                </div>
+
+                <div class="festival-grid" id="festival-grid"></div>
+            </div>
+        </section>
+
+        <section class="culture-section craft-section">
+            <div class="container">
+                <div class="section-heading left">
+                    <p class="eyebrow alt">Craft Heritage</p>
+                    <h2>Made in Ghana: Our Skills, Our Art, Our Heritage.</h2>
+                </div>
+
+                <div class="craft-grid" id="craft-grid"></div>
+            </div>
+        </section>
+
+        <section class="culture-section alt-panel">
+            <div class="container">
+                <div class="section-heading left">
+                    <p class="eyebrow alt">Regional Culture Map</p>
+                    <h2>Explore Ghana's 16 regions</h2>
+                </div>
+
+                <div class="region-map-wrap">
+                    <div class="region-chips" aria-label="Ghana region buttons">
+                        <button class="region-chip active" type="button" data-region="Greater Accra">Greater Accra</button>
+                        <button class="region-chip" type="button" data-region="Ashanti">Ashanti</button>
+                        <button class="region-chip" type="button" data-region="Western">Western</button>
+                        <button class="region-chip" type="button" data-region="Central">Central</button>
+                        <button class="region-chip" type="button" data-region="Eastern">Eastern</button>
+                        <button class="region-chip" type="button" data-region="Volta">Volta</button>
+                        <button class="region-chip" type="button" data-region="Northern">Northern</button>
+                        <button class="region-chip" type="button" data-region="Upper East">Upper East</button>
+                        <button class="region-chip" type="button" data-region="Upper West">Upper West</button>
+                        <button class="region-chip" type="button" data-region="Bono">Bono</button>
+                        <button class="region-chip" type="button" data-region="Bono East">Bono East</button>
+                        <button class="region-chip" type="button" data-region="Ahafo">Ahafo</button>
+                        <button class="region-chip" type="button" data-region="Western North">Western North</button>
+                        <button class="region-chip" type="button" data-region="Savannah">Savannah</button>
+                        <button class="region-chip" type="button" data-region="North East">North East</button>
+                        <button class="region-chip" type="button" data-region="Oti">Oti</button>
+                    </div>
+
+                    <div class="region-detail" id="region-detail" aria-live="polite"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="culture-section stories-section">
+            <div class="container">
+                <div class="section-heading left">
+                    <p class="eyebrow alt">The Stories Behind Our Traditions</p>
+                    <h2>Stories that keep culture alive</h2>
+                </div>
+
+                <div class="story-grid">
+                    <article class="story-card">
+                        <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=900&q=80" alt="Kente cloth being woven by a Ghanaian artisan" loading="lazy">
+                        <div class="story-card-body">
+                            <span class="story-tag">Kente</span>
+                            <h3>The meaning and craftsmanship of Kente</h3>
+                            <p>Kente is more than fabric; it is a living expression of storytelling, prestige, symbolism and the value of handwork.</p>
+                            <button type="button" class="story-link">Read More</button>
+                        </div>
+                    </article>
+
+                    <article class="story-card">
+                        <img src="https://images.unsplash.com/photo-1516031190212-da133013de50?auto=format&fit=crop&w=900&q=80" alt="Adinkra symbols on printed fabric" loading="lazy">
+                        <div class="story-card-body">
+                            <span class="story-tag">Adinkra</span>
+                            <h3>The symbolism of Adinkra</h3>
+                            <p>Each symbol carries meaning linked to wisdom, courage, unity and values passed through generations.</p>
+                            <button type="button" class="story-link">Read More</button>
+                        </div>
+                    </article>
+
+                    <article class="story-card">
+                        <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=900&q=80" alt="People at a Ghanaian festival celebrating together" loading="lazy">
+                        <div class="story-card-body">
+                            <span class="story-tag">Festivals</span>
+                            <h3>How festivals preserve history and community identity</h3>
+                            <p>Festivals gather families, elders and youth to share memory, strengthen belonging and keep culture vibrant.</p>
+                            <button type="button" class="story-link">Read More</button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="culture-section alt-panel" id="regional-heritage">
+            <div class="container">
+                <div class="section-heading left">
+                    <p class="eyebrow alt">16 Regions, One Ghana</p>
+                    <h2>16 Regions, One Ghana, Many Cultures.</h2>
+                </div>
+
+                <div class="region-cards-grid" id="region-cards-grid" aria-label="16 Ghanaian regions"></div>
+            </div>
+        </section>
+
+        <section class="culture-section quiz-section">
+            <div class="container quiz-layout">
+                <div class="quiz-copy">
+                    <p class="eyebrow alt">Culture Quiz</p>
+                    <h2>Test your Ghanaian culture knowledge</h2>
+                    <p>Explore the symbols, foods, festivals and traditions that connect communities across Ghana.</p>
+                </div>
+
+                <div class="quiz-box" id="culture-quiz">
+                    <div class="quiz-question-wrap">
+                        <p class="quiz-counter" id="quiz-counter">Question 1 of 3</p>
+                        <h3 id="quiz-question">Question text</h3>
+                    </div>
+                    <div class="quiz-options" id="quiz-options"></div>
+                    <p class="quiz-feedback" id="quiz-feedback"></p>
+                    <button type="button" class="primary-btn" id="next-question">Next Question</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="culture-section word-section">
+            <div class="container word-layout">
+                <div class="word-copy">
+                    <p class="eyebrow alt">Teach Me a Ghanaian Word</p>
+                    <h2>Words that carry wisdom, love and identity</h2>
+                    <p>
+                        Ghanaian languages are rich with proverbs and expressions that teach values like respect, patience, courage and togetherness.
+                    </p>
+                </div>
+
+                <div class="word-card-wrap">
+                    <div class="word-card" id="word-card">
+                        <span class="word-tag" id="word-tag">Akan</span>
+                        <h3 id="word-title">Akwaaba</h3>
+                        <p class="word-pronunciation" id="word-pronunciation">ah-KWAH-ba</p>
+                        <p class="word-meaning" id="word-meaning">Welcome. A greeting that expresses warmth and hospitality.</p>
+                    </div>
+                    <button type="button" class="primary-btn" id="next-word">Next word</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="culture-section share-section" id="share-culture">
+            <div class="container share-layout">
+                <div class="share-copy">
+                    <p class="eyebrow alt">Share Your Culture</p>
+                    <h2>Tell us what makes your community proud</h2>
+                    <p>
+                        From family recipes and festival memories to photos, music and local traditions, every story helps keep Ghana’s culture alive and vibrant.
+                    </p>
+                    <ul class="week-highlights">
+                        <li>Share a cultural memory</li>
+                        <li>Upload a photo or video</li>
+                        <li>Celebrate your region and traditions</li>
+                    </ul>
+                </div>
+
+                <form class="culture-form" id="culture-form">
+                    <div class="form-row">
+                        <label>
+                            Full name
+                            <input type="text" name="name" placeholder="Your name" required>
+                        </label>
+                        <label>
+                            Region
+                            <input type="text" name="region" placeholder="Your region" required>
+                        </label>
+                    </div>
+
+                    <label>
+                        Story title
+                        <input type="text" name="title" placeholder="e.g. A festival memory from my hometown" required>
+                    </label>
+
+                    <label>
+                        Your story
+                        <textarea name="story" placeholder="Tell us about a tradition, food, festival, proverb or cultural memory..." required></textarea>
+                    </label>
+
+                    <label>
+                        Upload photo / video
+                        <input type="file" name="media" accept="image/*,video/*">
+                    </label>
+
+                    <button type="submit" class="primary-btn">Submit story</button>
+                    <p class="story-message hidden" id="story-message">Thanks for sharing your culture with 70 Chale.</p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-wrap">
+            <p>© 2026 Ghana @ 70</p>
+            <p>Celebrating culture, heritage and the future of Ghana.</p>
+        </div>
+    </footer>
+
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+        <button type="button" class="lightbox-close" aria-label="Close image gallery">×</button>
+        <div class="lightbox-content">
+            <img id="lightbox-image" src="" alt="">
+            <div class="lightbox-copy">
+                <p class="lightbox-tag">Culture</p>
+                <h3 id="lightbox-title">Image</h3>
+                <p id="lightbox-description">Details</p>
+            </div>
+        </div>
+    </div>
+
+    <button class="back-to-top" id="back-to-top" type="button" aria-label="Back to top">↑</button>
+
+    <script src="src/culture.js" defer></script>
+</body>
+</html>

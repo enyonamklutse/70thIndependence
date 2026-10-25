@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore Ghana through its coastlines, heritage sites, festivals, wildlife, and vibrant communities.">
+    <title>Explore Ghana | Ghana @ 70</title>
+    <link rel="stylesheet" href="src/style.css">
+</head>
+<body class="explore-page-body">
+    <header class="topbar">
+        <div class="container nav-wrap">
+            <a href="index.html" class="brand" aria-label="Ghana 70 Independence home page">
+                <img src="images/Ghana-Inspired 70 Chale Crown Logo.png" alt="Ghana 70 independence crest logo">
+            </a>
+
+            <nav class="main-nav" aria-label="Main navigation">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="trending.html">Trending</a>
+                <a href="entertainment.html">Entertainment</a>
+                <a href="history.html">History</a>
+                <a href="culture.html">Culture</a>
+                <a href="exploreghana.html">Explore Ghana</a>
+                <a href="shop.html">Shop</a>
+                <a href="celebrate.html">Celebrate</a>
+            </nav>
+
+            <a href="celebrate.html" class="nav-cta">Celebrate</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="explore-hero">
+            <div class="container explore-hero-inner">
+                <div class="explore-copy">
+                    <p class="eyebrow alt">Discover Ghana</p>
+                    <h1>Explore Ghana: Where culture, coastlines and ambition meet.</h1>
+                    <p class="lead">
+                        From golden beaches and rainforest escapes to vibrant markets, heritage towns, and buzzing cities,
+                        Ghana offers an unforgettable mix of story, beauty, and modern energy.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="#destinations" class="primary-btn">Plan Your Journey</a>
+                        <a href="#regions" class="secondary-btn">View Regions</a>
+                    </div>
+
+                    <ul class="highlight-list" aria-label="Travel highlights in Ghana">
+                        <li>Atlantic shores</li>
+                        <li>Heritage sites</li>
+                        <li>Wildlife escapes</li>
+                    </ul>
+                </div>
+
+                <div class="explore-hero-visual">
+                    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Kakum_National_Park_2025.jpg" alt="Kakum National Park canopy walkway in Ghana">
+                    <div class="hero-badge">
+                        <span>Top pick</span>
+                        <strong>Volta Region</strong>
+                        <small>Falls • Heritage • Trails</small>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container section-block">
+            <div class="section-head">
+                <div>
+                    <p class="eyebrow alt">Plan your trip</p>
+                    <h2>Choose your rhythm</h2>
+                </div>
+            </div>
+
+            <div class="travel-quick-grid">
+                <article class="quick-card red-card">
+                    <span class="quick-kicker">City break</span>
+                    <h3>Accra</h3>
+                    <p>Live music, historic landmarks, markets, beaches and vibrant nightlife.</p>
+                </article>
+
+                <article class="quick-card gold-card">
+                    <span class="quick-kicker">Heritage</span>
+                    <h3>Cape Coast</h3>
+                    <p>Castle memories, ocean views, and a powerful chapter of African history.</p>
+                </article>
+
+                <article class="quick-card green-card">
+                    <span class="quick-kicker">Nature</span>
+                    <h3>Volta & Wli</h3>
+                    <p>Waterfalls, rolling hills, and unforgettable scenic road trips.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="destinations" class="container section-block">
+            <div class="section-head split-head">
+                <div>
+                    <p class="eyebrow alt">Explore by interest</p>
+                    <h2>Must-visit experiences</h2>
+                </div>
+                <div class="explore-toolbar">
+                    <div class="filter-row" aria-label="Destination categories">
+                        <button class="explore-filter active" data-filter="all" type="button">All</button>
+                        <button class="explore-filter" data-filter="coast" type="button">Coast</button>
+                        <button class="explore-filter" data-filter="heritage" type="button">Heritage</button>
+                        <button class="explore-filter" data-filter="nature" type="button">Nature</button>
+                        <button class="explore-filter" data-filter="cities" type="button">Cities</button>
+                        <button class="explore-filter" data-filter="food" type="button">Food</button>
+                    </div>
+                    <label class="search-box" aria-label="Search destinations">
+                        <span>🔎</span>
+                        <input id="explore-search" type="search" placeholder="Search places or activities">
+                    </label>
+                </div>
+            </div>
+
+            <div id="explore-destinations" class="destination-grid" aria-live="polite"></div>
+            <div id="explore-empty" class="empty-state" hidden>No destinations match your search yet.</div>
+        </section>
+
+        <section id="regions" class="container section-block">
+            <div class="section-head">
+                <div>
+                    <p class="eyebrow alt">Regional highlights</p>
+                    <h2>Explore Ghana by region</h2>
+                </div>
+            </div>
+
+            <div id="regional-grid" class="region-grid"></div>
+        </section>
+
+        <section class="container section-block">
+            <div class="section-head">
+                <div>
+                    <p class="eyebrow alt">Hidden gems</p>
+                    <h2>Beyond the usual itinerary</h2>
+                </div>
+            </div>
+
+            <div class="hidden-gems-grid">
+                <article class="gem-card">
+                    <div class="gem-image gem-one"></div>
+                    <div class="gem-body">
+                        <span class="meta-tag">Volta</span>
+                        <h3>Wli Falls and mountain trails</h3>
+                        <p>Cool air, dramatic views, and a rewarding hike through Ghana’s lush highlands.</p>
+                    </div>
+                </article>
+
+                <article class="gem-card">
+                    <div class="gem-image gem-two"></div>
+                    <div class="gem-body">
+                        <span class="meta-tag">Central</span>
+                        <h3>Elmina and its sea-laced history</h3>
+                        <p>Walk through a coastal settlement steeped in trade, resilience, and cultural memory.</p>
+                    </div>
+                </article>
+
+                <article class="gem-card">
+                    <div class="gem-image gem-three"></div>
+                    <div class="gem-body">
+                        <span class="meta-tag">Northern</span>
+                        <h3>Traditional markets and open skies</h3>
+                        <p>Discover vibrant craftwork, story-rich communities, and unforgettable landscapes.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="container section-block">
+            <div class="section-head">
+                <div>
+                    <p class="eyebrow alt">Travel essentials</p>
+                    <h2>Helpful planning notes</h2>
+                </div>
+            </div>
+
+            <div class="planning-grid">
+                <article class="plan-card">
+                    <span class="plan-icon">☀️</span>
+                    <h3>Best time to visit</h3>
+                    <p>November to March brings dry, sunny weather and ideal conditions for city tours and coastal escapes.</p>
+                </article>
+
+                <article class="plan-card">
+                    <span class="plan-icon">🚐</span>
+                    <h3>Getting around</h3>
+                    <p>Domestic flights, intercity buses, and ride-hailing apps make longer routes comfortable and flexible.</p>
+                </article>
+
+                <article class="plan-card">
+                    <span class="plan-icon">🍲</span>
+                    <h3>Food to try</h3>
+                    <p>Fufu, waakye, jollof, kelewele, grilled tilapia, fresh palm nut soup, and local fruit juices.</p>
+                </article>
+
+                <article class="plan-card">
+                    <span class="plan-icon">🎒</span>
+                    <h3>What to pack</h3>
+                    <p>Light fabrics, sun protection, comfortable shoes, a light rain layer, and a reusable water bottle.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-wrap">
+            <p>© 2026 Ghana @ 70</p>
+            <p>Celebrating freedom, culture, and the beauty of Ghana.</p>
+        </div>
+    </footer>
+
+    <div id="destination-modal" class="explore-modal hidden" aria-hidden="true">
+        <div class="modal-backdrop" data-close="true"></div>
+        <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+            <button class="modal-close" type="button" aria-label="Close destination details">×</button>
+            <div class="modal-media">
+                <img id="modal-image" src="" alt="">
+            </div>
+            <div class="modal-body">
+                <span id="modal-tag" class="meta-tag"></span>
+                <h3 id="modal-title"></h3>
+                <p id="modal-summary"></p>
+                <div class="modal-details">
+                    <div><strong>Region</strong><span id="modal-region"></span></div>
+                    <div><strong>Best for</strong><span id="modal-bestfor"></span></div>
+                    <div><strong>Travel time</strong><span id="modal-time"></span></div>
+                </div>
+                <ul id="modal-highlights" class="modal-highlights"></ul>
+                <div class="modal-actions">
+                    <a id="modal-link" href="#" target="_blank" rel="noreferrer">Plan this route</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const commonsImage = (title) => `https://commons.wikimedia.org/wiki/Special:FilePath/${encodeURIComponent(title)}`;
+
+        const destinationData = [
+            {
+                id: 'labadi',
+                name: 'Labadi & Accra coast',
+                category: 'coast',
+                region: 'Greater Accra',
+                bestFor: 'Sunset walks and city energy',
+                time: '1–2 days',
+                image: 'images/old accra.jpg',
+                summary: 'Relax at Ghana’s Atlantic edge, enjoy music, street life, and lively beach culture in the nation’s capital.',
+                highlights: ['Labadi Beach', 'Artisanal markets', 'Live music and food stalls'],
+                link: 'https://visitghana.com/'
+            },
+            {
+                id: 'cape-coast',
+                name: 'Cape Coast & Elmina',
+                category: 'heritage',
+                region: 'Central Region',
+                bestFor: 'History and coastal reflection',
+                time: '2–3 days',
+                image: commonsImage('Cape_Coast_Castle_Ghana.JPG'),
+                summary: 'Connect with Ghana’s historical story through castles, ocean views, and deeply rooted community culture.',
+                highlights: ['Cape Coast Castle', 'Elmina village life', 'Historic forts and viewpoints'],
+                link: 'https://visitghana.com/'
+            },
+            {
+                id: 'wli',
+                name: 'Wli Falls & the Volta Highlands',
+                category: 'nature',
+                region: 'Volta Region',
+                bestFor: 'Hiking, waterfalls and green landscapes',
+                time: '1–2 days',
+                image: commonsImage('Walkway_to_Wli_Waterfalls.JPG'),
+                summary: 'Find cool mountain breezes, scenic trails, and one of Ghana’s most dramatic waterfall experiences.',
+                highlights: ['Wli Falls', 'Mountain air', 'Community trails'],
+                link: 'https://visitghana.com/'
+            },
+            {
+                id: 'mole',
+                name: 'Mole National Park',
+                category: 'nature',
+                region: 'Northern Region',
+                bestFor: 'Wildlife viewing and open-country drives',
+                time: '2 days',
+                image: commonsImage('Mole_National_Park.jpg'),
+                summary: 'Experience Ghana’s savannah landscapes, antelope sightings, and one of the country’s top nature escapes.',
+                highlights: ['Game drives', 'Savannah trails', 'Birdlife'],
+                link: 'https://visitghana.com/'
+            },
+            {
+                id: 'kumasi',
+                name: 'Kumasi culture trail',
+                category: 'cities',
+                region: 'Ashanti Region',
+                bestFor: 'Craft, music and local culture',
+                time: '2 days',
+                image: 'images/default (1).jpg',
+                summary: 'Discover the heartbeat of Ghanaian creativity, from artisan workshops to bustling markets and lively festivals.',
+                highlights: ['Kejetia market', 'Craft villages', 'Traditional music'],
+                link: 'https://visitghana.com/'
+            },
+            {
+                id: 'akropong',
+                name: 'Akropong & Eastern Ghana',
+                category: 'heritage',
+                region: 'Eastern Region',
+                bestFor: 'Heritage towns and local stories',
+                time: '1 day',
+                image: 'images/default (1).jpg',
+                summary: 'Explore a side of Ghana where history, community, and scenic valleys come together in a relaxed pace.',
+                highlights: ['Historic settlements', 'Mountain roads', 'Warm hospitality'],
+                link: 'https://visitghana.com/'
+            },
+            {
+                id: 'wa',
+                name: 'Upper West discoveries',
+                category: 'food',
+                region: 'Upper West Region',
+                bestFor: 'Local food and cultural stories',
+                time: '2 days',
+                image: 'images/democracy.jpg',
+                summary: 'Slow down for local markets, hearty cuisine, and the warmth of northern Ghanaian hospitality.',
+                highlights: ['Fresh produce', 'Cultural cuisine', 'Community markets'],
+                link: 'https://visitghana.com/'
+            },
+            {
+                id: 'afrochella',
+                name: 'Festival season circuit',
+                category: 'food',
+                region: 'Across Ghana',
+                bestFor: 'Music, dance and celebration',
+                time: 'Flexible',
+                image: 'images/saving the nation.jpg',
+                summary: 'Time your trip to catch vibrant festival energy, community performances, and cultural celebrations in full colour.',
+                highlights: ['Music nights', 'Traditional dance', 'Local food stalls'],
+                link: 'https://visitghana.com/'
+            }
+        ];
+
+        const regionData = [
+            { name: 'Greater Accra', region: 'Cities & coast', image: 'images/old accra.jpg', facts: ['Accra', 'Labadi', 'Heritage points'] },
+            { name: 'Ashanti', region: 'Culture & craft', image: 'images/default (1).jpg', facts: ['Kumasi', 'Craft villages', 'Royal history'] },
+            { name: 'Western', region: 'Forest & coast', image: 'images/default (1).jpg', facts: ['Takoradi', 'Beaches', 'Forests'] },
+            { name: 'Central', region: 'Heritage & sea', image: commonsImage('Cape_Coast_Castle_Ghana.JPG'), facts: ['Cape Coast', 'Elmina', 'Castles'] },
+            { name: 'Volta', region: 'Mountains & waterfalls', image: commonsImage('Walkway_to_Wli_Waterfalls.JPG'), facts: ['Wli Falls', 'Lake Volta', 'Hills'] },
+            { name: 'Eastern', region: 'Valleys & towns', image: commonsImage('Boti_Falls_Ghana.jpg'), facts: ['Aburi', 'Scenic roads', 'Markets'] },
+            { name: 'Northern', region: 'Wildlife & culture', image: commonsImage('Mole_National_Park.jpg'), facts: ['Tamale', 'Mole', 'Savannah'] },
+            { name: 'Western North', region: 'Forest & lifestyle', image: commonsImage('Kakum_National_Park_2025.jpg'), facts: ['Rainforest', 'Villages', 'Community trails'] },
+            { name: 'Bono', region: 'Heritage & agriculture', image: 'images/default (1).jpg', facts: ['Sunyani', 'Villages', 'Food culture'] },
+            { name: 'Bono East', region: 'Rivers & communities', image: 'images/default (1).jpg', facts: ['River towns', 'Agriculture', 'Culture'] },
+            { name: 'Ahafo', region: 'Farming & craft', image: 'images/default (1).jpg', facts: ['Craft', 'Fields', 'Local life'] },
+            { name: 'Oti', region: 'Rich traditions', image: 'images/default (1).jpg', facts: ['Communities', 'Festivals', 'Heritage'] },
+            { name: 'Upper East', region: 'Proud traditions', image: 'images/default (1).jpg', facts: ['Bolgatanga', 'Culture', 'Markets'] },
+            { name: 'Upper West', region: 'Dry landscapes', image: 'images/default (1).jpg', facts: ['Community life', 'Food', 'Warm welcome'] },
+            { name: 'North East', region: 'Emerging tourism', image: 'images/default (1).jpg', facts: ['Rural charm', 'Heritage', 'Open horizons'] },
+            { name: 'Savannah', region: 'Open country', image: commonsImage('Mole_National_Park.jpg'), facts: ['Wide skies', 'Culture', 'Wildlife'] }
+        ];
+
+        const destinationGrid = document.getElementById('explore-destinations');
+        const regionalGrid = document.getElementById('regional-grid');
+        const searchInput = document.getElementById('explore-search');
+        const emptyState = document.getElementById('explore-empty');
+        const modal = document.getElementById('destination-modal');
+        const modalImage = document.getElementById('modal-image');
+        const modalTag = document.getElementById('modal-tag');
+        const modalTitle = document.getElementById('modal-title');
+        const modalSummary = document.getElementById('modal-summary');
+        const modalRegion = document.getElementById('modal-region');
+        const modalBestFor = document.getElementById('modal-bestfor');
+        const modalTime = document.getElementById('modal-time');
+        const modalHighlights = document.getElementById('modal-highlights');
+        const modalLink = document.getElementById('modal-link');
+
+        let activeFilter = 'all';
+
+        function cardMatches(item, query) {
+            const haystack = `${item.name} ${item.region} ${item.summary} ${item.highlights.join(' ')}`.toLowerCase();
+            return haystack.includes(query);
+        }
+
+        function renderDestinations() {
+            const query = (searchInput.value || '').trim().toLowerCase();
+            const filtered = destinationData.filter((item) => {
+                const categoryMatch = activeFilter === 'all' || item.category === activeFilter;
+                const searchMatch = !query || cardMatches(item, query);
+                return categoryMatch && searchMatch;
+            });
+
+            destinationGrid.innerHTML = filtered.map((item) => `
+                <article class="destination-card" data-id="${item.id}" aria-label="View details for ${item.name}">
+                    <div class="destination-image" style="background-image: url('${item.image}')"></div>
+                    <div class="destination-body">
+                        <div class="destination-topline">
+                            <span class="meta-tag">${item.region}</span>
+                            <span class="mini-badge">${item.time}</span>
+                        </div>
+                        <h3>${item.name}</h3>
+                        <p>${item.summary}</p>
+                        <div class="destination-meta">
+                            <span>${item.bestFor}</span>
+                            <button type="button" class="card-link-btn">View details</button>
+                        </div>
+                    </div>
+                </article>
+            `).join('');
+
+            emptyState.hidden = filtered.length !== 0;
+
+            destinationGrid.querySelectorAll('.destination-card').forEach((card) => {
+                card.addEventListener('click', () => {
+                    const item = destinationData.find((destination) => destination.id === card.dataset.id);
+                    if (item) openModal(item);
+                });
+            });
+        }
+
+        function renderRegions() {
+            regionalGrid.innerHTML = regionData.map((item) => `
+                <article class="region-card" aria-label="Explore ${item.name}">
+                    <img src="${item.image}" alt="${item.name} region overview">
+                    <div class="region-card-body">
+                        <span class="region-badge">${item.region}</span>
+                        <h3>${item.name}</h3>
+                        <ul>
+                            ${item.facts.map((fact) => `<li>${fact}</li>`).join('')}
+                        </ul>
+                    </div>
+                </article>
+            `).join('');
+        }
+
+        function openModal(item) {
+            modal.classList.remove('hidden');
+            modal.setAttribute('aria-hidden', 'false');
+            modalImage.src = item.image;
+            modalImage.alt = item.name;
+            modalTag.textContent = item.region;
+            modalTitle.textContent = item.name;
+            modalSummary.textContent = item.summary;
+            modalRegion.textContent = item.region;
+            modalBestFor.textContent = item.bestFor;
+            modalTime.textContent = item.time;
+            modalHighlights.innerHTML = item.highlights.map((point) => `<li>${point}</li>`).join('');
+            modalLink.href = item.link;
+        }
+
+        function closeModal() {
+            modal.classList.add('hidden');
+            modal.setAttribute('aria-hidden', 'true');
+        }
+
+        document.querySelectorAll('.explore-filter').forEach((button) => {
+            button.addEventListener('click', () => {
+                activeFilter = button.dataset.filter;
+                document.querySelectorAll('.explore-filter').forEach((item) => item.classList.toggle('active', item === button));
+                renderDestinations();
+            });
+        });
+
+        searchInput.addEventListener('input', renderDestinations);
+
+        modal.addEventListener('click', (event) => {
+            if (event.target.dataset.close === 'true' || event.target === modal) {
+                closeModal();
+            }
+        });
+
+        document.querySelector('.modal-close').addEventListener('click', closeModal);
+        document.addEventListener('keydown', (event) => {
+            if (event.key === 'Escape' && !modal.classList.contains('hidden')) {
+                closeModal();
+            }
+        });
+
+        renderDestinations();
+        renderRegions();
+    </script>
+</body>
+</html>

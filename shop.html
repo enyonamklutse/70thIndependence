@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Shop for Ghana@70 cultural products and discover local businesses in Ghana.">
+    <title>Shop | Ghana @ 70</title>
+    <link rel="stylesheet" href="src/style.css">
+</head>
+<body class="shop-page-body">
+    <header class="topbar">
+        <div class="container nav-wrap">
+            <a href="index.html" class="brand" aria-label="Ghana 70 Independence home page">
+                <img src="images/Ghana-Inspired 70 Chale Crown Logo.png" alt="Ghana 70 independence crest logo">
+            </a>
+
+            <nav class="main-nav" aria-label="Main navigation">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="trending.html">Trending</a>
+                <a href="entertainment.html">Entertainment</a>
+                <a href="history.html">History</a>
+                <a href="culture.html">Culture</a>
+                <a href="exploreghana.html">Explore Ghana</a>
+                <a href="shop.html">Shop</a>
+            </nav>
+
+            <a href="history.html" class="nav-cta">Celebrate</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="shop-hero">
+            <div class="container shop-hero-inner">
+                <div class="shop-copy">
+                    <p class="eyebrow alt">Shop Ghana</p>
+                    <h1>Celebrate Ghana @ 70 with handcrafted pride.</h1>
+                    <p class="lead">
+                        Discover locally inspired pieces, heritage goods, creative gifts, and trusted Ghanaian businesses.
+                        Every item is presented as a demo storefront and should be connected to your real merchants before launch.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="#shop-grid" class="primary-btn">Browse products</a>
+                        <a href="#business-directory" class="secondary-btn">Meet local vendors</a>
+                    </div>
+                </div>
+
+                <div class="shop-hero-panel">
+                    <div class="mini-card">
+                        <span>Featured drop</span>
+                        <strong>70 Chale Collection</strong>
+                        <small>Heritage gifts • apparel • décor</small>
+                    </div>
+                    <div class="mini-stats">
+                        <div>
+                            <strong>18+</strong>
+                            <span>Products</span>
+                        </div>
+                        <div>
+                            <strong>12</strong>
+                            <span>Business listings</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container shop-section">
+            <div class="section-head split-head">
+                <div>
+                    <p class="eyebrow alt">Storefront</p>
+                    <h2>Curated Ghana-inspired items</h2>
+                </div>
+            </div>
+
+            <div class="shop-controls">
+                <label class="search-box" aria-label="Search products">
+                    <span>🔎</span>
+                    <input id="product-search" type="search" placeholder="Search products, gifts, apparel...">
+                </label>
+
+                <div class="filter-row" id="product-filters" aria-label="Filter product categories">
+                    <button class="shop-filter active" type="button" data-category="all">All</button>
+                    <button class="shop-filter" type="button" data-category="apparel">Apparel</button>
+                    <button class="shop-filter" type="button" data-category="home">Home</button>
+                    <button class="shop-filter" type="button" data-category="accessories">Accessories</button>
+                    <button class="shop-filter" type="button" data-category="gifts">Gifts</button>
+                    <button class="shop-filter" type="button" data-category="food">Food</button>
+                </div>
+            </div>
+
+            <div class="shop-shell" id="shop-grid">
+                <div class="product-panel">
+                    <div id="product-list" class="product-grid" aria-live="polite"></div>
+                </div>
+
+                <aside class="cart-panel" aria-label="Shopping cart">
+                    <div class="cart-header">
+                        <h3>Shopping Cart</h3>
+                        <button id="clear-cart" class="text-button" type="button">Clear all</button>
+                    </div>
+
+                    <div id="cart-items" class="cart-items">
+                        <p class="empty-cart">Your cart is empty.</p>
+                    </div>
+
+                    <div class="cart-summary">
+                        <div class="summary-row">
+                            <span>Subtotal</span>
+                            <strong id="cart-subtotal">GH₵ 0.00</strong>
+                        </div>
+                        <div class="summary-row">
+                            <span>Delivery</span>
+                            <strong>GH₵ 0.00</strong>
+                        </div>
+                        <div class="summary-row total-row">
+                            <span>Total</span>
+                            <strong id="cart-total">GH₵ 0.00</strong>
+                        </div>
+                    </div>
+
+                    <button id="checkout-whatsapp" class="primary-btn full-width" type="button">Order via WhatsApp</button>
+                    <p class="integration-note">No live payment gateway is configured yet. Connect your real merchant WhatsApp number before launch.</p>
+                </aside>
+            </div>
+        </section>
+
+        <section id="business-directory" class="container shop-section directory-section">
+            <div class="section-head">
+                <div>
+                    <p class="eyebrow alt">Business directory</p>
+                    <h2>Find trusted local makers</h2>
+                </div>
+            </div>
+
+            <div class="directory-grid" id="directory-list"></div>
+        </section>
+
+        <section class="container shop-section">
+            <div class="section-head">
+                <div>
+                    <p class="eyebrow alt">How to launch</p>
+                    <h2>Simple integration checklist</h2>
+                </div>
+            </div>
+
+            <div class="info-grid">
+                <article class="info-card">
+                    <span class="info-icon">📦</span>
+                    <h3>1. Replace demo data</h3>
+                    <p>Swap placeholder product images, prices, and merchant info with your live catalog before publishing.</p>
+                </article>
+
+                <article class="info-card">
+                    <span class="info-icon">💬</span>
+                    <h3>2. Add real WhatsApp links</h3>
+                    <p>Use a live WhatsApp number only after confirming the merchant or shop owner has approved it.</p>
+                </article>
+
+                <article class="info-card">
+                    <span class="info-icon">💳</span>
+                    <h3>3. Connect a payment flow</h3>
+                    <p>This front-end demo does not process payments by itself. Add a payment platform when you are ready for checkout.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-wrap">
+            <p>© 2026 Ghana @ 70</p>
+            <p>Celebrating Ghanaian creativity, heritage, and enterprise.</p>
+        </div>
+    </footer>
+
+    <script>
+        const products = [
+            {
+                id: 'adinkra-tote',
+                name: 'Adinkra Heritage Tote',
+                category: 'accessories',
+                price: 180,
+                image: 'https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=900&q=80',
+                merchant: 'Akyem Craft House',
+                description: 'A durable everyday tote printed with symbolic Ghanaian patterns.'
+            },
+            {
+                id: 'ghanaiastudio-shirt',
+                name: 'Ghana @ 70 Tee',
+                category: 'apparel',
+                price: 220,
+                image: 'https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=900&q=80',
+                merchant: 'Accra Street Studio',
+                description: 'Premium cotton tee with a bold national pride design.'
+            },
+            {
+                id: 'wooden-sculpture',
+                name: 'African Wood Story Sculpture',
+                category: 'home',
+                price: 450,
+                image: 'https://images.unsplash.com/photo-1517705008128-361805f42e86?auto=format&fit=crop&w=900&q=80',
+                merchant: 'Kumasi Makers Co.',
+                description: 'A handcrafted décor piece inspired by Ghanaian storytelling and craft traditions.'
+            },
+            {
+                id: 'golden-spice',
+                name: 'Ghanaian Spiced Tea Blend',
+                category: 'food',
+                price: 95,
+                image: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=900&q=80',
+                merchant: 'Northern Flavour Hub',
+                description: 'A warming herbal blend made for thoughtful gifting and hosting.'
+            },
+            {
+                id: 'woven-basket',
+                name: 'Woven Basket Set',
+                category: 'home',
+                price: 260,
+                image: 'https://images.unsplash.com/photo-1503602642458-232111445657?auto=format&fit=crop&w=900&q=80',
+                merchant: 'Volta Weavers Collective',
+                description: 'Textured basket pieces to bring natural charm to the home.'
+            },
+            {
+                id: 'ankara-shawl',
+                name: 'Ankara Wrap Scarf',
+                category: 'gifts',
+                price: 140,
+                image: 'https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=900&q=80',
+                merchant: 'Haatso Fashion Lab',
+                description: 'Bright, festive fabric for gifting, styling, and everyday expression.'
+            },
+            {
+                id: 'ceramic-mug',
+                name: 'Handmade Ceramic Mug',
+                category: 'home',
+                price: 130,
+                image: 'https://images.unsplash.com/photo-1514228742587-6b1558fcca3d?auto=format&fit=crop&w=900&q=80',
+                merchant: 'Sunyani Pottery Studio',
+                description: 'A beautiful mug finished in earthy tones and handcrafted details.'
+            },
+            {
+                id: 'heritage-coin-box',
+                name: 'Heritage Coin Box',
+                category: 'gifts',
+                price: 210,
+                image: 'https://images.unsplash.com/photo-1523413651479-597eb2da0ad6?auto=format&fit=crop&w=900&q=80',
+                merchant: 'Cape Coast Design Works',
+                description: 'A keepsake box that celebrates Ghanaian memory and everyday pride.'
+            },
+            {
+                id: 'festival-scarf',
+                name: 'Festival Celebration Scarf',
+                category: 'accessories',
+                price: 160,
+                image: 'https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=900&q=80',
+                merchant: 'Ghana Threads Collective',
+                description: 'A vibrant scarf ideal for Ghanaian celebrations and travel days.'
+            }
+        ];
+
+        const directory = [
+            {
+                name: 'Akyem Craft House',
+                category: 'Handmade goods',
+                location: 'Eastern Region',
+                description: 'Ghanaian-inspired handmade bags, accessories, and heritage pieces.',
+                contactLabel: 'Add live WhatsApp link',
+                contactUrl: '#'
+            },
+            {
+                name: 'Accra Street Studio',
+                category: 'Apparel',
+                location: 'Greater Accra',
+                description: 'Limited-run tees and statement pieces for national pride and everyday wear.',
+                contactLabel: 'Add live WhatsApp link',
+                contactUrl: '#'
+            },
+            {
+                name: 'Kumasi Makers Co.',
+                category: 'Home & décor',
+                location: 'Ashanti Region',
+                description: 'Wooden décor and handcrafted objects reflecting local artistry.',
+                contactLabel: 'Add live WhatsApp link',
+                contactUrl: '#'
+            },
+            {
+                name: 'Northern Flavour Hub',
+                category: 'Food',
+                location: 'Northern Region',
+                description: 'Tea, spices, and small-batch local food products for gifting and hosting.',
+                contactLabel: 'Add live WhatsApp link',
+                contactUrl: '#'
+            },
+            {
+                name: 'Volta Weavers Collective',
+                category: 'Textiles',
+                location: 'Volta Region',
+                description: 'Natural fibers, woven baskets, and textured pieces made with care.',
+                contactLabel: 'Add live WhatsApp link',
+                contactUrl: '#'
+            },
+            {
+                name: 'Sunyani Pottery Studio',
+                category: 'Home & décor',
+                location: 'Bono Region',
+                description: 'Hand-thrown ceramics for kitchens, gifting, and mindful everyday rituals.',
+                contactLabel: 'Add live WhatsApp link',
+                contactUrl: '#'
+            }
+        ];
+
+        const productList = document.getElementById('product-list');
+        const productSearch = document.getElementById('product-search');
+        const directoryList = document.getElementById('directory-list');
+        const cartItems = document.getElementById('cart-items');
+        const cartSubtotal = document.getElementById('cart-subtotal');
+        const cartTotal = document.getElementById('cart-total');
+        const clearCartBtn = document.getElementById('clear-cart');
+        const checkoutBtn = document.getElementById('checkout-whatsapp');
+
+        let activeCategory = 'all';
+        let cart = [];
+
+        function formatter(amount) {
+            return new Intl.NumberFormat('en-GH', {
+                style: 'currency',
+                currency: 'GHS',
+                maximumFractionDigits: 2
+            }).format(amount);
+        }
+
+        function formatPrice(amount) {
+            return `GH₵ ${amount.toFixed(2)}`;
+        }
+
+        function getFilteredProducts() {
+            const query = productSearch.value.trim().toLowerCase();
+
+            return products.filter((product) => {
+                const matchesCategory = activeCategory === 'all' || product.category === activeCategory;
+                const haystack = `${product.name} ${product.merchant} ${product.description} ${product.category}`.toLowerCase();
+                const matchesSearch = !query || haystack.includes(query);
+                return matchesCategory && matchesSearch;
+            });
+        }
+
+        function renderProducts() {
+            const filteredProducts = getFilteredProducts();
+
+            if (!filteredProducts.length) {
+                productList.innerHTML = '<div class="empty-results">No products match your filter yet.</div>';
+                return;
+            }
+
+            productList.innerHTML = filteredProducts.map((product) => `
+                <article class="product-card">
+                    <div class="product-image" style="background-image:url('${product.image}')"></div>
+                    <div class="product-body">
+                        <div class="product-meta">
+                            <span class="product-tag">${product.category}</span>
+                            <span class="merchant-name">${product.merchant}</span>
+                        </div>
+                        <h3>${product.name}</h3>
+                        <p>${product.description}</p>
+                        <div class="product-footer">
+                            <strong>${formatPrice(product.price)}</strong>
+                            <button class="mini-btn" type="button" data-product-id="${product.id}">Add to cart</button>
+                        </div>
+                    </div>
+                </article>
+            `).join('');
+
+            productList.querySelectorAll('[data-product-id]').forEach((button) => {
+                button.addEventListener('click', () => addToCart(button.dataset.productId));
+            });
+        }
+
+        function renderDirectory() {
+            directoryList.innerHTML = directory.map((entry) => `
+                <article class="directory-card">
+                    <div class="directory-head">
+                        <span class="directory-tag">${entry.category}</span>
+                        <span class="directory-location">${entry.location}</span>
+                    </div>
+                    <h3>${entry.name}</h3>
+                    <p>${entry.description}</p>
+                    <a class="directory-link" href="${entry.contactUrl}" target="_blank" rel="noreferrer">${entry.contactLabel}</a>
+                </article>
+            `).join('');
+        }
+
+        function addToCart(productId) {
+            const product = products.find((item) => item.id === productId);
+            if (!product) return;
+
+            const existing = cart.find((item) => item.id === productId);
+            if (existing) {
+                existing.quantity += 1;
+            } else {
+                cart.push({ ...product, quantity: 1 });
+            }
+
+            updateCart();
+        }
+
+        function removeFromCart(productId) {
+            cart = cart.filter((item) => item.id !== productId);
+            updateCart();
+        }
+
+        function updateCart() {
+            if (!cart.length) {
+                cartItems.innerHTML = '<p class="empty-cart">Your cart is empty.</p>';
+            } else {
+                cartItems.innerHTML = cart.map((item) => `
+                    <div class="cart-item">
+                        <div>
+                            <h4>${item.name}</h4>
+                            <small>${formatPrice(item.price)} × ${item.quantity}</small>
+                        </div>
+                        <div class="cart-actions">
+                            <strong>${formatPrice(item.price * item.quantity)}</strong>
+                            <button type="button" data-remove-id="${item.id}" class="remove-btn">Remove</button>
+                        </div>
+                    </div>
+                `).join('');
+
+                cartItems.querySelectorAll('[data-remove-id]').forEach((button) => {
+                    button.addEventListener('click', () => removeFromCart(button.dataset.removeId));
+                });
+            }
+
+            const subtotal = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
+            cartSubtotal.textContent = formatPrice(subtotal);
+            cartTotal.textContent = formatPrice(subtotal);
+        }
+
+        function buildWhatsAppMessage() {
+            if (!cart.length) {
+                return 'Hello, I would like to place an order for your Ghana at 70 shop items.';
+            }
+
+            const lines = cart.map((item) => `${item.name} x${item.quantity} - ${formatPrice(item.price * item.quantity)}`);
+            const total = formatPrice(cart.reduce((sum, item) => sum + item.price * item.quantity, 0));
+            return encodeURIComponent(`Hello, I would like to order the following Ghana @ 70 items:\n${lines.join('\n')}\n\nTotal: ${total}\nPlease confirm availability and delivery.`);
+        }
+
+        checkoutBtn.addEventListener('click', () => {
+            const message = buildWhatsAppMessage();
+            const whatsappUrl = `https://wa.me/?text=${message}`;
+            window.open(whatsappUrl, '_blank', 'noopener');
+        });
+
+        clearCartBtn.addEventListener('click', () => {
+            cart = [];
+            updateCart();
+        });
+
+        document.querySelectorAll('.shop-filter').forEach((button) => {
+            button.addEventListener('click', () => {
+                activeCategory = button.dataset.category;
+                document.querySelectorAll('.shop-filter').forEach((item) => item.classList.toggle('active', item === button));
+                renderProducts();
+            });
+        });
+
+        productSearch.addEventListener('input', renderProducts);
+
+        renderProducts();
+        renderDirectory();
+        updateCart();
+    </script>
+</body>
+</html>

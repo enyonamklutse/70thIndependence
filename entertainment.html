@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Beat of Ghana celebrates Ghanaian music, culture, film, events, and entertainment at 70 years of independence.">
+    <title>The Beat of Ghana | Entertainment</title>
+    <link rel="stylesheet" href="src/style.css">
+</head>
+<body class="entertainment-page">
+    <header class="topbar">
+        <div class="container nav-wrap">
+            <a href="index.html" class="brand" aria-label="Ghana 70 Independence home page">
+                <img src="images/Ghana-Inspired 70 Chale Crown Logo.png" alt="Ghana 70 independence crest logo">
+            </a>
+
+            <nav class="main-nav" aria-label="Main navigation">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="trending.html">Trending</a>
+                <a href="entertainment.html">Entertainment</a>
+                <a href="history.html">History</a>
+                <a href="culture.html">Culture</a>
+                <a href="exploreghana.html">Explore Ghana</a>
+                <a href="shop.html">Shop</a>
+            </nav>
+
+            <a href="history.html" class="nav-cta">Celebrate</a>
+        </div>
+    </header>
+
+    <main class="entertainment-main">
+        <section class="page-hero">
+            <div class="container page-hero-inner">
+                <div class="page-hero-copy">
+                    <p class="eyebrow">Ghana @ 70</p>
+                    <h1>The Beat of Ghana</h1>
+                    <p class="lead">
+                        A celebration of Ghana’s music, screen culture, nightlife, heritage stories,
+                        tourism, and the voices shaping the nation’s next chapter.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#trending-now" class="primary-btn">Trending Now</a>
+                        <a href="#legends" class="secondary-btn">70 Legends</a>
+                    </div>
+                </div>
+
+                <div class="page-hero-visual">
+                    <img src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=900&q=80" alt="Ghanaian music and performance celebration">
+                    <div class="hero-badge">
+                        <span>70 Years</span>
+                        <strong>of Ghanaian Sound</strong>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="trending-now" class="container section-block">
+            <div class="section-head">
+                <div>
+                    <p class="eyebrow alt">Trending Now</p>
+                    <h2>Current entertainment headlines</h2>
+                </div>
+            </div>
+
+            <div class="trending-strip">
+                <article class="mini-trend red">
+                    <span class="mini-kicker">Music</span>
+                    <h3>Top Ghanaian songs still dominating playlists and nightlife</h3>
+                    <a href="https://www.youtube.com/results?search_query=ghana+afrobeats+2026" target="_blank" rel="noreferrer">Listen now</a>
+                </article>
+
+                <article class="mini-trend gold">
+                    <span class="mini-kicker">Film</span>
+                    <h3>TV and movie chatter surges around African stories and diaspora pride</h3>
+                    <a href="https://www.youtube.com/results?search_query=african+movies+ghana" target="_blank" rel="noreferrer">Watch more</a>
+                </article>
+
+                <article class="mini-trend green">
+                    <span class="mini-kicker">Events</span>
+                    <h3>Major concerts, festivals and cultural nights are selling out across Accra</h3>
+                    <a href="https://www.eventbrite.com/d/ghana--accra/events/" target="_blank" rel="noreferrer">Get tickets</a>
+                </article>
+            </div>
+        </section>
+
+        <section class="container section-block">
+            <div class="entertainment-toolbar">
+                <div class="filter-row" aria-label="Entertainment categories">
+                    <button class="filter-pill ent-filter active" data-filter="all" type="button">All</button>
+                    <button class="filter-pill ent-filter" data-filter="music" type="button">Music</button>
+                    <button class="filter-pill ent-filter" data-filter="tv" type="button">TV</button>
+                    <button class="filter-pill ent-filter" data-filter="movies" type="button">Movies</button>
+                    <button class="filter-pill ent-filter" data-filter="events" type="button">Events</button>
+                    <button class="filter-pill ent-filter" data-filter="incidents" type="button">Incidents</button>
+                </div>
+
+                <label class="search-box" aria-label="Search entertainment">
+                    <span>Search</span>
+                    <input id="ent-search" type="search" placeholder="Search the legendary list...">
+                </label>
+            </div>
+
+            <div class="legend-collections" id="entertainment-grid">
+                <article class="legend-section" data-category="music">
+                    <div class="legend-header">
+                        <div>
+                            <p class="eyebrow alt">70 icons</p>
+                            <h3>Legendary Ghanaian music</h3>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1501386761578-eac5c94b800a?auto=format&fit=crop&w=900&q=80" alt="Legendary Ghanaian music performance">
+                    </div>
+                    <ul class="legend-list" id="music-legend"></ul>
+                </article>
+
+                <article class="legend-section" data-category="tv">
+                    <div class="legend-header">
+                        <div>
+                            <p class="eyebrow alt">70 icons</p>
+                            <h3>Legendary Ghanaian TV</h3>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=900&q=80" alt="Ghanaian television and screen culture">
+                    </div>
+                    <ul class="legend-list" id="tv-legend"></ul>
+                </article>
+
+                <article class="legend-section" data-category="movies">
+                    <div class="legend-header">
+                        <div>
+                            <p class="eyebrow alt">70 icons</p>
+                            <h3>Legendary Ghanaian movies</h3>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1536440136628-849c177e76a1?auto=format&fit=crop&w=900&q=80" alt="Iconic Ghanaian movies and film screening">
+                    </div>
+                    <ul class="legend-list" id="movies-legend"></ul>
+                </article>
+
+                <article class="legend-section" data-category="events">
+                    <div class="legend-header">
+                        <div>
+                            <p class="eyebrow alt">70 icons</p>
+                            <h3>Craziest events in Ghana</h3>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=900&q=80" alt="High-energy Ghanaian event and festival">
+                    </div>
+                    <ul class="legend-list" id="events-legend"></ul>
+                </article>
+
+                <article class="legend-section" data-category="incidents">
+                    <div class="legend-header">
+                        <div>
+                            <p class="eyebrow alt">70 icons</p>
+                            <h3>Defining incidents & moments</h3>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1495020689067-958852a7765e?auto=format&fit=crop&w=900&q=80" alt="Important Ghanaian civic and public moment">
+                    </div>
+                    <ul class="legend-list" id="incidents-legend"></ul>
+                </article>
+            </div>
+
+            <div id="no-results" class="empty-state" hidden>
+                No matching legendary entries found. Try a different keyword or category.
+            </div>
+        </section>
+
+        <section class="container section-block">
+            <div class="section-head">
+                <div>
+                    <p class="eyebrow alt">70 Highlights</p>
+                    <h2>Celebrating 70 Years</h2>
+                </div>
+            </div>
+
+            <div class="legend-grid" id="legends">
+                <article class="legend-card">
+                    <img src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=900&q=80" alt="Ghanaian musicians performing at a cultural celebration">
+                    <div>
+                        <span class="legend-role">Legendary Music</span>
+                        <h3>Highlife, Afrobeat and hiplife legends</h3>
+                        <p>Ghana’s music scene has carried national pride across generations, from traditional instruments to modern Afro-pop.</p>
+                    </div>
+                </article>
+
+                <article class="legend-card">
+                    <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=900&q=80" alt="Ghanaian stage performance and festival crowd">
+                    <div>
+                        <span class="legend-role">Screen Icons</span>
+                        <h3>Actors, presenters and storytellers shaping Ghana’s screen culture</h3>
+                        <p>Television and film have helped define identity, youth culture and national storytelling in a global era.</p>
+                    </div>
+                </article>
+
+                <article class="legend-card">
+                    <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80" alt="Cultural heritage and tourism destination in Ghana">
+                    <div>
+                        <span class="legend-role">Cultural Icons</span>
+                        <h3>Leaders, dancers and artisans preserving Ghanaian spirit</h3>
+                        <p>Fashion, heritage, storytelling and local craft remain at the heart of Ghana’s entertainment identity.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-wrap">
+            <p>© 2026 Ghana @ 70</p>
+            <p>Celebrating freedom, culture, and the beat of a nation.</p>
+        </div>
+    </footer>
+
+    <script src="src/script.js"></script>
+</body>
+</html>
